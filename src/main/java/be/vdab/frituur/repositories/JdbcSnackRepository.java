@@ -6,11 +6,13 @@ import org.springframework.dao.IncorrectResultSizeDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
-public class JdbcSnackRepository implements SnackRepository{
+@Repository
+ class JdbcSnackRepository implements SnackRepository{
     private final JdbcTemplate template;
     JdbcSnackRepository(JdbcTemplate template) {
         this.template = template;

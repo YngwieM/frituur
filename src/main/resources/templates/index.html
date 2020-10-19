@@ -8,6 +8,8 @@
 <div th:object="${adres}" th:text="|*{straat} *{huisNr} *{gemeente.postcode}
  *{gemeente.naam}|"></div>
 <div th:if="${reedsBezocht}">Welkom terug.</div>
+<div th:if="${param.snackNietGevonden}" class="fout">Snack
+    <span th:text="${param.snackNietGevonden}"></span> niet gevonden</div>
 </body>
 
 </html>
