@@ -166,3 +166,6 @@ input {
 	margin-bottom: 1em;
 	font-size: 1.1em;
 }
+input[type=checkbox] {
+	display: inline;
+}
